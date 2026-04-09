@@ -1,0 +1,1 @@
+{"ignition":{"version":"3.5.0"},"passwd":{"users":[{"name":"core","sshAuthorizedKeys":["ssh-rsa AAAAB3NzaC1yc2EAAAA... your-public-key"]}]},"systemd":{"units":[{"enabled":true,"name":"docker.service"}]}}

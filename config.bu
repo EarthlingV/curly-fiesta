@@ -1,0 +1,12 @@
+# config.bu
+variant: fcos
+version: 1.6.0
+passwd:
+  users:
+    - name: core
+      ssh_authorized_keys:
+        - "ssh-rsa AAAAB3NzaC1yc2EAAAA... your-public-key"
+systemd:
+  units:
+    - name: docker.service
+      enabled: true
