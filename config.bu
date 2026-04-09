@@ -5,7 +5,7 @@ passwd:
   users:
     - name: core
       ssh_authorized_keys:
-        - "ssh-rsa AAAAB3NzaC1yc2EAAAA... your-public-key"
+        - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBSi+hUDVN4qvwzypbGELZ1hw1Tvcf2lK3lib2POGhIO"
 systemd:
   units:
     - name: docker.service
