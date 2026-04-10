@@ -1,1 +1,21 @@
-{"ignition":{"version":"3.5.0"},"passwd":{"users":[{"name":"core","sshAuthorizedKeys":["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBSi+hUDVN4qvwzypbGELZ1hw1Tvcf2lK3lib2POGhIO"]}]},"systemd":{"units":[{"enabled":true,"name":"docker.service"}]}}
+{
+  "ignition": {
+    "version": "3.5.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "name": "core",
+        "sshAuthorizedKeys": ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBSi+hUDVN4qvwzypbGELZ1hw1Tvcf2lK3lib2POGhIO"]
+      }
+    ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "enabled": true,
+        "name": "docker.service"
+      }
+    ]
+  }
+}
