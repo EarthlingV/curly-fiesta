@@ -1,0 +1,97 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "groups": [
+          "wheel",
+          "docker"
+        ],
+        "name": "marco",
+        "passwordHash": "$6$7F3nbNBv9mS.1JJv$zLUXxNeQaTg0U/Rp53UgXow18PhdKDWzOGK4hF67C.yb82Sm9nb/fqjwEw8isZNyuRe9rEbZBbjbGllkb.0uE/",
+        "sshAuthorizedKeys": [
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBSi+hUDVN4qvwzypbGELZ1hw1Tvcf2lK3lib2POGhIO"
+        ]
+      }
+    ]
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/hostname",
+        "contents": {
+          "compression": "",
+          "source": "data:,ship.earthlingv.cloud"
+        },
+        "mode": 420
+      },
+      {
+        "path": "/etc/NetworkManager/system-connections/ens3.nmconnection",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/3TNQW6EMAwF0L3v0kxiIAWjnASxsJJPB6mEEYRWc/uqZdpZdWPp2996Q1xzRizzmkeaU0DeKyr3GwLKFVtGoTkXbJNGvGRdcDb0KOvjM5TtANHw2x+Jhvn2UY+0oFzXFBbNh76TprRh37EH13TGdY3xnfGvF2Z604JPvT8PrXGU8h5qb6rWMDeGK9s/UsM/6WT8/wyrValjtBJZuEEScRdf/2kTWityQqy2ktpaK1acCBx8/9y130OmCN/TVwAAAP//HEzxIjEBAAA="
+        },
+        "mode": 384
+      },
+      {
+        "overwrite": true,
+        "path": "/etc/firewalld/zones/public.xml",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/7Kxr8jNUShLLSrOzM+zVTLUM1BSSM1Lzk/JzEu3VSotSdO1ULK347Kpys9LteNSULApzsgvKrELKE3KyUy20YfwQOIpqcXJRZkFJZn5eVBZBZAehUcNUxSCgz10FDxCQgIgZLBCfl5OpZ6NPrIesNmpRWWZyakKeYm5qbZKxcUZSvpYxDNKSgpwShSDZGz0Ic4FBAAA///7py5+3QAAAA=="
+        },
+        "mode": 420
+      },
+      {
+        "path": "/etc/zincati/config.d/55-update-strategy.toml",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/zTNMarDMAyA4V2nEJofwS9jIWu3Ti10CCaYWiSCxg62TMjtiwKZPiSE/rFtMShXD1VLUJ4PHJA2LpKjfAhgvC66a9ntkmLevYcYjooDjkiPnOgP6dXYeHM8p6UZ9yLGM+hJS4RWC0UnlZWt5/qbcwRfTrMu0yqpKdvn/97BLwAA//898MQ8ogAAAA=="
+        },
+        "mode": 420
+      },
+      {
+        "path": "/etc/modules-load.d/br_netfilter.conf",
+        "contents": {
+          "compression": "",
+          "source": "data:,br_netfilter%0A"
+        },
+        "mode": 420
+      },
+      {
+        "path": "/etc/sysctl.d/99-containers.conf",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/8pLLdFLKspMSU+FUrp5abrJiTk5upkFJYlJOanFCgq2CoZc+NSZQRXC1GUWlJnoZRbEp+UXlScWpSigA5A6QAAAAP//GxhMCXgAAAA="
+        },
+        "mode": 420
+      }
+    ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "enabled": true,
+        "name": "firewalld.service"
+      },
+      {
+        "enabled": true,
+        "name": "podman.socket"
+      },
+      {
+        "enabled": true,
+        "name": "podman-auto-update.timer"
+      },
+      {
+        "enabled": true,
+        "name": "zincati.service"
+      },
+      {
+        "enabled": true,
+        "name": "systemd-sysctl.service"
+      }
+    ]
+  }
+}
